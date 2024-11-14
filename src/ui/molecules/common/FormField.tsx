@@ -2,7 +2,7 @@
 
 import { Input } from "@/ui/atoms";
 import {
-  // Control,
+  Control,
   Controller,
   FieldError,
   FieldValues,
@@ -13,7 +13,7 @@ interface IPropsFormField<T extends FieldValues> {
   label: string;
   type: string;
   name: Path<T>;
-  // control: Control<T>;
+  control: Control<T>;
   error?: FieldError;
   id?: string;
   placeholder?: string;
@@ -23,7 +23,7 @@ export const FormField = <T extends FieldValues>({
   label,
   type,
   name,
-  // control,
+  control,
   error,
   id,
   placeholder,
@@ -38,7 +38,7 @@ export const FormField = <T extends FieldValues>({
       </label>
       <Controller
         name={name}
-        // control={control}
+        control={control}
         render={({ field }) => (
           <Input
             id={id || label.toLowerCase()}

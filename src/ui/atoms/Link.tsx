@@ -12,8 +12,9 @@ interface LinkProps {
 const NavLink = ({ path, label, Icon, className }: LinkProps) => {
   return (
     <Link href={path} className={`link-primary ${className}`}>
-      {label}
       {Icon && <Icon size={20}></Icon>}
+      {label}
+    
     </Link>
   )
 }

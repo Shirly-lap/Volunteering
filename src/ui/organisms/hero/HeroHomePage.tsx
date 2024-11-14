@@ -12,8 +12,10 @@ const HeroHomePage = () => {
           Encuentra proyectos que te apasionen o crea los tuyos propios para hacer una diferencia en tu comunidad.' />
         </div>
         <div className="flex gap-3 w-1/4">
-          <Button className='capitalize bg-black rounded-md text-white w-full h-11' label='explora proyectos' />
-          <Button className='capitalize bg-slate-100 w-full h-11 text-center border border-slate-300' label='comenzar como organizador' />
+          <Button className='capitalize bg-black rounded-md text-white w-full h-11 justify-center' label='explora proyectos' />
+          <Button
+            className='capitalize bg-slate-100 w-full h-11 text-center border border-slate-300 justify-center'
+            label='comenzar como organizador' />
         </div>
       </Hero>
     </>
